@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/todo-list.css" />
+</head>
+
+<body>
+  <div class="todo-list-container">
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p>Please input a value</p>
+        <button class="modal-button">OK</button>
+      </div>
+    </div>
+    <h1>Todo-list</h1>
+    <div class="input-container">
+      <form id="submit">
+        <input type="text" id="input" placeholder="What do you want to do?" />
+        <button>Save</button>
+      </form>
+    </div>
+    <div class="list-container">
+      <button id="get-req">Reload Data </button>
+    </div>
+  </div>
+</body>
+<script src="/scripts/todo-list.js" defer></script>
+
+</html>
