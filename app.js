@@ -1,5 +1,4 @@
 const express = require("express");
-const fs = require("fs/promises");
 const path = require("path");
 const bodyParser = require("body-parser");
 const routes = require("./routes/todolist");
