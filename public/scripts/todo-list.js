@@ -78,7 +78,7 @@ async function deleteList(event, index) {
 }
 
 async function patchReq(index, value) {
-  const response = await fetch("/patches", {
+  const response = await fetch("/update", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -92,6 +92,7 @@ async function patchReq(index, value) {
     reloadData();
   }
 }
+
 async function editList(index) {
   // patch request
   const edit = document.querySelectorAll(".button-edit")[index];

@@ -8,8 +8,7 @@ async function readFileParse() {
   return listsData;
 }
 
-async function writeFile(lists) {
-  await fs.writeFile("./data/data.json", JSON.stringify(lists));
-  return lists;
+async function writeFile(data) {
+  await fs.writeFile("./data/data.json", JSON.stringify(data));
 }
 module.exports = { readFileParse, writeFile };
